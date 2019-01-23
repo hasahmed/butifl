@@ -1,5 +1,5 @@
 import 'jest';
-import { Butifl } from './butifl';
+import { Butifl } from './../src/butifl';
 
 describe('Util Tests', () => {
 	describe('Util.assignDefined', () => {

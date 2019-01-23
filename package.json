@@ -4,21 +4,22 @@
   "description": "Strongly Typed Javascript Utilities",
   "main": "dist/index.js",
   "scripts": {
-		"test": "jest --config=test/jest.conf.json",
+    "test": "jest --config=test/jest.conf.json",
     "tsc": "tsc"
   },
   "keywords": [
     "utilities",
     "typescript",
     "butifl"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/hasahmed/butifl.git"
-	},
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hasahmed/butifl.git"
+  },
   "author": "Hasan Ahmed",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^23.3.13",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.5",
     "typescript": "^3.2.4"

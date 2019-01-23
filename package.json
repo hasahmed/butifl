@@ -1,6 +1,6 @@
 {
   "name": "butifl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strongly Typed Javascript Utilities",
   "main": "dist/index.js",
   "scripts": {

@@ -1,7 +1,7 @@
 {
   "name": "butifl",
   "version": "1.0.3",
-  "description": "Strongly Typed Javascript Utilities",
+  "description": "Strongly Typed Typescript and Javascript Utilities",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest --config=test/jest.conf.json",

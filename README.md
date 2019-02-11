@@ -8,6 +8,7 @@
 ```typescript
 class A {
 	public a = 0;
+	public b: number = undefined
 }
 
 let obj = {
@@ -17,6 +18,5 @@ let obj = {
 };
 
 let aInst = Butifl.assignExisting(new A(), obj);
-console.log(aInst) // {a: 10}
-
+console.log(aInst); // {a: 10, b: 100}
 ```

@@ -5,15 +5,13 @@
     "module": "commonjs",
     "lib": [
         "es2017",
-        "dom"
+				"esnext.array"
     ],
     "sourceMap": true,
 		"outDir": "./dist",
     "removeComments": true,
     "strict": true,
     "noImplicitAny": false,
-    // "listFiles": true,
-    // "checkJs": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
@@ -36,6 +34,6 @@
 		"test"
   ],
   "include": [
-    "src",
+    "src"
   ]
 }

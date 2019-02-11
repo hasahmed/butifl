@@ -1,6 +1,6 @@
 {
   "name": "butifl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
@@ -36,6 +36,12 @@
       "version": "23.3.13",
       "resolved": "https://registry.npmjs.org/@types/jest/-/jest-23.3.13.tgz",
       "integrity": "sha512-ePl4l+7dLLmCucIwgQHAgjiepY++qcI6nb8eAwGNkB6OxmTe3Z9rQU3rSpomqu42PCCnlThZbOoxsf+qylJsLA==",
+      "dev": true
+    },
+    "@types/node": {
+      "version": "10.12.24",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-10.12.24.tgz",
+      "integrity": "sha512-GWWbvt+z9G5otRBW8rssOFgRY87J9N/qbhqfjMZ+gUuL6zoL+Hm6gP/8qQBG4jjimqdaNLCehcVapZ/Fs2WjCQ==",
       "dev": true
     },
     "abab": {
@@ -682,6 +688,14 @@
         "lodash": "^4.17.4",
         "mkdirp": "^0.5.1",
         "source-map-support": "^0.4.15"
+      },
+      "dependencies": {
+        "core-js": {
+          "version": "2.6.4",
+          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.6.4.tgz",
+          "integrity": "sha512-05qQ5hXShcqGkPZpXEFLIpxayZscVD2kuMBZewxiIPPEagukO4mqgPA9CWhUvFBJfy3ODdK2p9xyHh7FTU9/7A==",
+          "dev": true
+        }
       }
     },
     "babel-runtime": {
@@ -692,6 +706,14 @@
       "requires": {
         "core-js": "^2.4.0",
         "regenerator-runtime": "^0.11.0"
+      },
+      "dependencies": {
+        "core-js": {
+          "version": "2.6.4",
+          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.6.4.tgz",
+          "integrity": "sha512-05qQ5hXShcqGkPZpXEFLIpxayZscVD2kuMBZewxiIPPEagukO4mqgPA9CWhUvFBJfy3ODdK2p9xyHh7FTU9/7A==",
+          "dev": true
+        }
       }
     },
     "babel-template": {
@@ -1080,9 +1102,9 @@
       "dev": true
     },
     "core-js": {
-      "version": "2.6.3",
-      "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.6.3.tgz",
-      "integrity": "sha512-l00tmFFZOBHtYhN4Cz7k32VM7vTn3rE2ANjQDxdEN6zmXZ/xq1jQuutnmHvMG1ZJ7xd72+TA5YpUK8wz3rWsfQ==",
+      "version": "3.0.0-beta.15",
+      "resolved": "https://registry.npmjs.org/core-js/-/core-js-3.0.0-beta.15.tgz",
+      "integrity": "sha512-1d9F3F8Dpm6lLym3CY/U6m3/dQ1u+9dwXgrd9LrcEaV1qx8lUg7ugWPLOQoZpoIwCWH8zQ0RwMswOMFzfusK7w==",
       "dev": true
     },
     "core-util-is": {

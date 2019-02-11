@@ -1,8 +1,8 @@
 import 'jest';
 import { Butifl } from './../src/butifl';
 
-describe('Util Tests', () => {
-	describe('Util.assignDefined', () => {
+describe('Butifl Tests', () => {
+	describe('Butifl.assignDefined', () => {
 		it('Should be unchanged with only prop undefined', () => {
 			const target = {
 				a: 10
@@ -46,7 +46,7 @@ describe('Util Tests', () => {
 			expect(Butifl.assignDefined(target, null)).toBe(target);
 		});
 	});
-	describe('Util.assignExisting', () => {
+	describe('Butifl.assignExisting', () => {
 		it('Should skip properties non-existant in target', () => {
 			const target = {
 				a: 10
@@ -145,6 +145,22 @@ describe('Util Tests', () => {
 			});
 			expect(Butifl.assignExisting(target, null)).toBe(target);
 			expect(Butifl.assignExisting(target, undefined)).toBe(target);
+		});
+	});
+	describe('union', () => {
+		it('Should union errors', () => {
+			const arr1 = [1, 2, 3, 4];
+			const arr2 = [1, 2, 3, 4, 5, 6, 7];
+			const uni = Butifl.union<number, number>(arr1, arr2);
+			const s = new Set(arr1.concat(arr2));
+			expect(uni.indexOf(1)).not.toEqual(-1);
+			expect(uni.indexOf(2)).not.toEqual(-1);
+			expect(uni.indexOf(3)).not.toEqual(-1);
+			expect(uni.indexOf(4)).not.toEqual(-1);
+			expect(uni.indexOf(5)).not.toEqual(-1);
+			expect(uni.indexOf(6)).not.toEqual(-1);
+			expect(uni.indexOf(7)).not.toEqual(-1);
+			expect(s.size).toEqual(uni.length);
 		});
 	});
 });

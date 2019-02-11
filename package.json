@@ -1,11 +1,11 @@
 {
   "name": "butifl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Strongly Typed Javascript Utilities",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest --config=test/jest.conf.json",
-    "tsc": "tsc"
+    "build": "tsc"
   },
   "keywords": [
     "utilities",
@@ -20,6 +20,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^23.3.13",
+    "@types/node": "^10.12.24",
+    "core-js": "^3.0.0-beta.15",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.5",
     "typescript": "^3.2.4"

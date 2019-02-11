@@ -1,4 +1,5 @@
 {
-    "preset": "ts-jest",
-	"rootDir": "./"
+	"rootDir": "./",
+	"preset": "ts-jest",
+	"setupFiles": [ "core-js" ]
 }

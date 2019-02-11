@@ -26,4 +26,7 @@ export class Butifl {
 		}
 		return target;
 	}
+	static union<T, U>(...errors: T[][]|U[][]): T[]|U[] {
+		return [...new Set(errors.flat())];
+	}
 }

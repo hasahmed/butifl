@@ -151,7 +151,10 @@ describe('Butifl Tests', () => {
 				a: undefined,
 				b: 10
 			};
-			console.log(Butifl.assignExisting(target, {a: 100, b: 100}));
+			expect(Butifl.assignExisting(target, {a: 100, b: 100})).toEqual({
+				a: 100,
+				b: 100
+			});
 		})
 	});
 	describe('union', () => {

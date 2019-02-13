@@ -146,6 +146,13 @@ describe('Butifl Tests', () => {
 			expect(Butifl.assignExisting(target, null)).toBe(target);
 			expect(Butifl.assignExisting(target, undefined)).toBe(target);
 		});
+		it('Should copy into undefined properties', () => {
+			const target = {
+				a: undefined,
+				b: 10
+			};
+			console.log(Butifl.assignExisting(target, {a: 100, b: 100}));
+		})
 	});
 	describe('union', () => {
 		it('Should union errors', () => {

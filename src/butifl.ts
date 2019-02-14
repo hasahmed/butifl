@@ -1,7 +1,7 @@
 export class Butifl {
 	static assignDefined<T, U>(target: T, source: U): T & U {
 		for (let key in source) {
-			if (source[key])
+			if (source[key] != null)
 				target[key.toString()] = source[key];
 		}
 		return target as T & U;
@@ -12,13 +12,13 @@ export class Butifl {
 	 * @param target 
 	 * @param source 
 	 */
-	static assignExisting<T, U>(target: T, source: U, skipFalsey: boolean=true): T {
+	static assignExisting<T, U>(target: T, source: U, skipNullAndUndefined: boolean=true): T {
 		for (let key in source) {
 			if (target.hasOwnProperty(key)) {
-				if (!skipFalsey) {
+				if (!skipNullAndUndefined) {
 					target[key.toString()] = source[key];
 				} else {
-					if (source[key]) {
+					if (source[key] != null) {
 						target[key.toString()] = source[key];
 					}
 				}

@@ -47,6 +47,18 @@ describe('Butifl Tests', () => {
 		});
 	});
 	describe('Butifl.assignExisting', () => {
+		it('should assign 0s from target', () => {
+			const target = {
+				a: undefined
+			}
+			const source = {
+				a: 0
+			};
+			expect(Butifl.assignExisting(target, source)).toEqual({
+				a: 0
+			});
+		})
+		
 		it('Should skip properties non-existant in target', () => {
 			const target = {
 				a: 10
